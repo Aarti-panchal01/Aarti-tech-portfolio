@@ -1,0 +1,16 @@
+# Decisions made unilaterally during the build
+
+Each of these was an ambiguity or conflict not covered by the brief. The call made, and why:
+
+1. **"Closeli" and "entangle-ed" are not on the site.** The brief named both, but neither exists on her GitHub (searched), on aarti-panchal.site, or anywhere findable on the web. Rule applied: no fact in `research/facts.md`, no claim on the site. If these are real (private repos? different names?), send me the links and they can be added.
+2. **Angular 20, not 19.** The old site says "Angular 4 to Angular 19"; the c4gt-2026-amrit README and the actual merged PR (#1 "Angular 20 + ZardUI foundation setup") say Angular 20. The code wins.
+3. **"Quanad Lab" spelling.** The brief wrote "Quandalab"; the live site consistently says "Quanad Lab". Used the site's spelling.
+4. **LinkedIn and Hashnode links taken from the old site's own footer hrefs** (web search and the Hashnode API could not find them; the rendered site's footer could): linkedin.com/in/aarti-panchal-93196a319 and hashnode.com/@Aarti-panchal01. Instagram was also found but left off the new site's footer to keep it to professional links.
+5. **Blog facts used sparingly.** The Hashnode profile hosts 14 small blogs (22 posts); the only one referenced on the new site is the Jan 2026 liquid-state NMR post, linked from the quantum essay, because it directly documents the Quanad Lab work.
+6. **Khoj "500+ users" kept, phrased as reported.** It is self-reported on her own site and not independently verifiable; it appears once, in the Khoj essay, without further embellishment. The site's "3 awards" claim was dropped entirely (never itemized anywhere).
+7. **AI Manipulation Detector omitted.** The site describes it as image-deepfake detection; the repo description says voice-recording analysis. Contradiction, and not a headline project, so it was left off.
+8. **Microsoft Learn Student Ambassadors "R&D Intern" omitted.** Appears only on the old site with no corroboration and thin detail; the essays are stronger without a one-line title drop.
+9. **Repo location.** Built in `c:\Users\Aarti Panchal\Aarti-tech-portfolio` (fresh clone of the empty GitHub repo), since the session's working directory (`C:\Program Files\Git`) is the Git installation folder, not a project.
+10. **Four essays: migration, NMR quantum, ARIA, Khoj.** These are the four things with the deepest verifiable substance (94 commits on the migration repo; lab work; own repo with documented architecture; launched product). ProofChain AI, verifi.ed, AWS AI League, NCC, and the rest either get a single line or nothing, to keep the page one honest read.
+11. **The quantum essay says the NMR build stalled.** The live site presents the 2-qubit build as ongoing; her own January 2026 blog post says plainly that it stopped for lack of a high-stability spectrometer, with the takeaway that progress is gated by infrastructure. The blog is more recent and more honest, so the essay follows the blog and links to it. The "Currently" line consequently mentions only the C4GT work.
+12. **General NMR physics in Essay 2** (compass-needle spins, radio pulses as gates, ensemble readout, decoherence) is textbook background used to explain her stated work (2-qubit liquid-sample NMR since Aug 2025); it makes no claims about Quanad Lab's specific apparatus.
