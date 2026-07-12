@@ -1,4 +1,27 @@
-# Final site copy — v3 (canonical)
+# Final site copy — v5 (canonical: v3 base + v4/v5 deltas below)
+
+## v5 deltas (2026-07-13, user feedback)
+
+- Two pages again: / and /about (v4), nav right side is theme toggle + About/Home link.
+- Homepage bio rewritten so it doesn't repeat the role line:
+  "My pattern is simple: find something chaotic, give it a spine. A lost charger drowning in
+  campus WhatsApp groups became Khoj. The 2017-era code behind India's 104 health helpline is
+  becoming a clean Angular 20 app, one component at a time. Molecules in a vial almost became a
+  computer. The AIML degree at PES is the excuse; shipping is the actual education."
+- Role line: Founder @ Khoj | C4GT '26 Fellow @ Piramal Swasthya | PESU AIML '28 (class of 2028
+  is user-provided, see facts.md).
+- Highlights are now pointer bullets with mono accent numbers: 500+ Khoj students; 94/95 commits;
+  2 qubits / 1 year at Quanad Lab; 20+ shipped projects; 2 NCC nationals + Best Air Contingent
+  Award. Closing line: "I build what I want to see."
+- Links are icon-only (GitHub, LinkedIn, Hashnode, Khoj=magnifier, creative portfolio=star,
+  email) pinned to the bottom of every page as a footer.
+- About page routing is a labeled arrow list: my projects → GitHub; the formal version →
+  LinkedIn; how I think → my blogs; the creative side → aarti-panchal.site; everything else →
+  email.
+- Sun/moon emoji theme toggle in the nav; black theme is default, day mode persists via
+  localStorage.
+
+# v3 copy below (About page prose still canonical)
 
 v3 direction (user feedback): ONE page only. No separate About route, no icon footer that
 requires scrolling. Text links (including the old creative portfolio at aarti-panchal.site and

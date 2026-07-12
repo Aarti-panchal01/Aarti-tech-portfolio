@@ -1,12 +1,12 @@
 import { SiteNav } from "@/components/site-nav";
-import { IconLinks } from "@/components/icon-links";
+import { SiteFooter } from "@/components/site-footer";
 
 export default function Home() {
   return (
-    <div className="mx-auto flex min-h-svh max-w-[42rem] flex-col px-6 pb-14">
+    <div className="mx-auto flex min-h-svh max-w-[42rem] flex-col px-6">
       <SiteNav page="home" />
 
-      <main className="pt-[max(4rem,14vh)]">
+      <main className="pt-[max(3.5rem,12vh)] pb-14">
         <p className="label text-soft">hey, I&rsquo;m</p>
         <h1 className="text-5xl font-medium tracking-tight sm:text-6xl">
           Aarti
@@ -26,25 +26,65 @@ export default function Home() {
         </p>
 
         <p className="mt-7">
-          I&rsquo;m the founder of Khoj, a campus lost-and-found platform past
-          500 users across Bengaluru, and a Code for GovTech 2026 fellow with
-          AMRIT (Piramal Swasthya), rebuilding the UI of India&rsquo;s 104
-          public health helpline from Angular 4 to Angular 20. I&rsquo;m doing
-          my B.Tech in AI and Machine Learning at PES University, Electronic
-          City Campus, class of 2028.
+          My pattern is simple: find something chaotic, give it a spine. A
+          lost charger drowning in campus WhatsApp groups became Khoj. The
+          2017-era code behind India&rsquo;s 104 health helpline is becoming a
+          clean Angular 20 app, one component at a time. Molecules in a vial
+          almost became a computer. The AIML degree at PES is the excuse;
+          shipping is the actual education.
         </p>
 
-        <p className="mt-5 text-soft">
-          Beyond that: a year on a{" "}
-          <span className="whitespace-nowrap">2-qubit</span> NMR quantum
-          computer at Quanad Lab, 20+ shipped projects, and an NCC Air Wing
-          uniform. I build what I want to see.
-        </p>
+        <ul className="mt-7 list-none space-y-2 text-soft">
+          <li className="flex gap-3">
+            <span className="num" aria-hidden="true">
+              ▸
+            </span>
+            <span>
+              <span className="num">500+</span> students on Khoj across
+              Bengaluru campuses
+            </span>
+          </li>
+          <li className="flex gap-3">
+            <span className="num" aria-hidden="true">
+              ▸
+            </span>
+            <span>
+              <span className="num">94/95</span> commits on the 104 helpline
+              rebuild are mine
+            </span>
+          </li>
+          <li className="flex gap-3">
+            <span className="num" aria-hidden="true">
+              ▸
+            </span>
+            <span>
+              <span className="num">2</span> qubits of liquid-state NMR at
+              Quanad Lab, <span className="num">1</span> year of pulses
+            </span>
+          </li>
+          <li className="flex gap-3">
+            <span className="num" aria-hidden="true">
+              ▸
+            </span>
+            <span>
+              <span className="num">20+</span> shipped projects
+            </span>
+          </li>
+          <li className="flex gap-3">
+            <span className="num" aria-hidden="true">
+              ▸
+            </span>
+            <span>
+              <span className="num">2</span> NCC nationals and a Best Air
+              Contingent Award
+            </span>
+          </li>
+        </ul>
 
-        <div className="mt-8 -ml-2">
-          <IconLinks />
-        </div>
+        <p className="mt-7">I build what I want to see.</p>
       </main>
+
+      <SiteFooter />
     </div>
   );
 }

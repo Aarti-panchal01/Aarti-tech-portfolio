@@ -21,6 +21,8 @@ export const metadata: Metadata = {
     "Engineer at PES University, Bengaluru. C4GT 2026 fellow rebuilding India’s 104 health helpline UI. Founder of Khoj. Writes about NMR quantum computing and research agents.",
 };
 
+const themeInit = `try{if(localStorage.getItem("theme")==="light")document.documentElement.dataset.theme="light"}catch(e){}`;
+
 export default function RootLayout({
   children,
 }: {
@@ -28,6 +30,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInit }} />
+      </head>
       <body>{children}</body>
     </html>
   );

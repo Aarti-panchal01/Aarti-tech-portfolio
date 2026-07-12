@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SiteNav } from "@/components/site-nav";
-import { IconLinks } from "@/components/icon-links";
+import { SiteFooter } from "@/components/site-footer";
 
 export const metadata: Metadata = {
   title: "About me | Aarti Panchal",
@@ -11,7 +11,7 @@ export default function About() {
     <div className="mx-auto flex min-h-svh max-w-[42rem] flex-col px-6 pb-14">
       <SiteNav page="about" />
 
-      <main className="pt-14">
+      <main className="pt-14 pb-14">
         <h1 className="text-3xl font-medium tracking-tight">About me</h1>
 
         <hr className="mt-5 border-hairline" />
@@ -69,30 +69,74 @@ export default function About() {
           sortie over Yelahanka on my 18th birthday.
         </p>
 
-        <p className="mt-6">
-          My projects live on{" "}
-          <a href="https://github.com/Aarti-panchal01">GitHub</a>. The formal
-          version is on{" "}
-          <a href="https://linkedin.com/in/aarti-panchal-93196a319">LinkedIn</a>
-          . How I think is on{" "}
-          <a href="https://hashnode.com/@Aarti-panchal01">my blogs</a>. The
-          creative version of this site is at{" "}
-          <a href="https://aarti-panchal.site">aarti-panchal.site</a>. For
-          everything else:{" "}
-          <a href="mailto:aartipanchal539@gmail.com">
-            aartipanchal539@gmail.com
-          </a>
-          .
-        </p>
+        <ul className="mt-8 list-none space-y-2">
+          <li className="flex flex-wrap gap-x-3">
+            <span className="label w-36 shrink-0 pt-1 text-soft">
+              my projects
+            </span>
+            <span>
+              <span className="num" aria-hidden="true">
+                →&ensp;
+              </span>
+              <a href="https://github.com/Aarti-panchal01">GitHub</a>
+            </span>
+          </li>
+          <li className="flex flex-wrap gap-x-3">
+            <span className="label w-36 shrink-0 pt-1 text-soft">
+              the formal version
+            </span>
+            <span>
+              <span className="num" aria-hidden="true">
+                →&ensp;
+              </span>
+              <a href="https://linkedin.com/in/aarti-panchal-93196a319">
+                LinkedIn
+              </a>
+            </span>
+          </li>
+          <li className="flex flex-wrap gap-x-3">
+            <span className="label w-36 shrink-0 pt-1 text-soft">
+              how I think
+            </span>
+            <span>
+              <span className="num" aria-hidden="true">
+                →&ensp;
+              </span>
+              <a href="https://hashnode.com/@Aarti-panchal01">my blogs</a>
+            </span>
+          </li>
+          <li className="flex flex-wrap gap-x-3">
+            <span className="label w-36 shrink-0 pt-1 text-soft">
+              the creative side
+            </span>
+            <span>
+              <span className="num" aria-hidden="true">
+                →&ensp;
+              </span>
+              <a href="https://aarti-panchal.site">aarti-panchal.site</a>
+            </span>
+          </li>
+          <li className="flex flex-wrap gap-x-3">
+            <span className="label w-36 shrink-0 pt-1 text-soft">
+              everything else
+            </span>
+            <span>
+              <span className="num" aria-hidden="true">
+                →&ensp;
+              </span>
+              <a href="mailto:aartipanchal539@gmail.com">
+                aartipanchal539@gmail.com
+              </a>
+            </span>
+          </li>
+        </ul>
 
         <p className="mt-8 text-soft italic">
           One life. Why not just do it all.
         </p>
-
-        <div className="mt-8 -ml-2">
-          <IconLinks />
-        </div>
       </main>
+
+      <SiteFooter />
     </div>
   );
 }
