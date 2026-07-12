@@ -3,7 +3,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 
 export function SiteNav({ page }: { page: "home" | "about" }) {
   return (
-    <nav className="flex items-center justify-between pt-8">
+    <nav className="flex items-center justify-between pt-4">
       <Link href="/" className="label no-underline text-soft hover:text-ink">
         ap
       </Link>

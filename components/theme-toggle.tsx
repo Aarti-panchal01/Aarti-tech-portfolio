@@ -11,7 +11,8 @@ export function ThemeToggle() {
     }
   }, []);
 
-  function apply(next: "dark" | "light") {
+  function flip() {
+    const next = theme === "dark" ? "light" : "dark";
     setTheme(next);
     if (next === "light") {
       document.documentElement.dataset.theme = "light";
@@ -26,27 +27,15 @@ export function ThemeToggle() {
   }
 
   return (
-    <span className="inline-flex items-center gap-1 align-middle">
-      <button
-        type="button"
-        className="theme-btn"
-        aria-label="Day mode"
-        title="Day mode"
-        aria-pressed={theme === "light"}
-        onClick={() => apply("light")}
-      >
-        🌞
-      </button>
-      <button
-        type="button"
-        className="theme-btn"
-        aria-label="Night mode"
-        title="Night mode"
-        aria-pressed={theme === "dark"}
-        onClick={() => apply("dark")}
-      >
-        🌙
-      </button>
-    </span>
+    <button
+      type="button"
+      className="theme-btn"
+      aria-label={theme === "dark" ? "Switch to day mode" : "Switch to night mode"}
+      title={theme === "dark" ? "Day mode" : "Night mode"}
+      aria-pressed={theme === "light"}
+      onClick={flip}
+    >
+      {theme === "dark" ? "🌞" : "🌙"}
+    </button>
   );
 }

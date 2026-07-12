@@ -41,9 +41,13 @@ export default function About() {
           on a fresh Angular 20 workspace: roughly 118 components and 65
           services reconstructed on standalone components, functional
           interceptors, RxJS 7, and ZardUI. Of the repo&rsquo;s 95 commits, 94
-          are mine. Before the fellowship I&rsquo;d already landed
-          contributions across AMRIT&rsquo;s open repos, and I contribute
-          through GSSoC &rsquo;26 too.
+          are mine, and I&rsquo;m{" "}
+          <a href="https://github.com/Aarti-panchal01/c4gt-2026-amrit">
+            documenting the whole migration here
+          </a>
+          . Before the fellowship I&rsquo;d already landed contributions
+          across AMRIT&rsquo;s open repos, and I contribute through GSSoC
+          &rsquo;26 too.
         </p>
 
         <p className="mt-6">
