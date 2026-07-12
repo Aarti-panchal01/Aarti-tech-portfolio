@@ -16,6 +16,7 @@ Every claim on the final site must trace to a line in this file.
 - GitHub: `Aarti-panchal01` (created 2025-02-18, 42 public repos, 28 followers, bio: "Curious kid. I build what I want to see", company: PESU, location: Bangalore) — source: GitHub API
 - Email (public, from site footer): aartipanchal539@gmail.com
 - B.Tech AIML student at PES University, Electronic City Campus (PESU ECC), Bengaluru — source: site (multiple pages)
+- Class of 2028 — source: user (stated directly, 2026-07-12); consistent with the PES2UG24 repo prefix (2024 admission) and "3rd-year" in her Hashnode bio as of 2026.
 - Old portfolio: https://aarti-panchal.site/ (base44 SPA, 5-persona structure: Founder / Researcher / Cadet / Engineer / Dreamer)
 
 ## Current work (as of July 2026)
