@@ -17,7 +17,8 @@ export default function Home() {
             and give them structure: a 2017-era Angular codebase behind
             India’s 104 public health helpline, a campus lost-and-found that
             used to live in WhatsApp groups, and a vial of molecules we tried
-            to turn into a 2-qubit computer.
+            to turn into a <span className="whitespace-nowrap">2-qubit</span>{" "}
+            computer.
           </p>
 
           <p className="mt-7">
