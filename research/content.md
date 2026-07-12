@@ -5,15 +5,15 @@ Every claim traces to research/facts.md. Do not add, embellish, or reorder facts
 ## Meta
 
 - Title: "Aarti Panchal"
-- Description: "Engineer at PES University, Bengaluru. C4GT 2026 fellow rebuilding India's 104 health helpline UI. NMR quantum computing at Quanad Lab. Founder of Khoj."
+- Description: "Engineer at PES University, Bengaluru. C4GT 2026 fellow rebuilding India's 104 health helpline UI. Founder of Khoj. Writes about NMR quantum computing and research agents."
 
 ## Intro / bio
 
 # Aarti Panchal
 
-I'm an AI and machine learning undergrad at PES University in Bengaluru. Most of what I do outside class is take messy systems and give them structure: a 2017-era Angular codebase behind India's 104 public health helpline, a campus lost-and-found that used to live in WhatsApp groups, and molecules in a vial that we are trying to use as qubits.
+I'm an AI and machine learning undergrad at PES University in Bengaluru. Most of what I do outside class is take messy systems and give them structure: a 2017-era Angular codebase behind India's 104 public health helpline, a campus lost-and-found that used to live in WhatsApp groups, and a vial of molecules we tried to turn into a 2-qubit computer.
 
-**Currently:** rebuilding Helpline104-UI on Angular 20 for AMRIT (Piramal Swasthya) as a Code for GovTech 2026 fellow, and working on a 2-qubit NMR quantum computer at Quanad Lab.
+**Currently:** rebuilding Helpline104-UI on Angular 20 for AMRIT (Piramal Swasthya) as a Code for GovTech 2026 fellow.
 
 Outside of code I'm an NCC Air Wing cadet. I flew my first microlight sortie at 17 and my second over Yelahanka Air Force Station on my 18th birthday.
 
@@ -33,11 +33,13 @@ The legacy app is about 118 components and 65 services, and the work is deciding
 
 ### A computer made of spinning nuclei
 
-The quantum computer I work on at Quanad Lab is not a golden chandelier in a dilution fridge. It is a small vial of liquid. Every molecule in that vial is identical, and inside each one sit atomic nuclei that behave like tiny compass needles. Put the vial in a strong magnetic field and the needles line up. Hit them with a precisely timed radio pulse and they tip and start to precess, like a spinning top nudged off its axis. Tip them halfway and a nucleus is not pointing up or down but in a genuine superposition of both. That is a qubit, and the radio pulses are the logic gates.
+The quantum computer I worked on at Quanad Lab is not a golden chandelier in a dilution fridge. It is a small vial of liquid. Every molecule in that vial is identical, and inside each one sit atomic nuclei that behave like tiny compass needles. Put the vial in a strong magnetic field and the needles line up. Hit them with a precisely timed radio pulse and they tip and start to precess, like a spinning top nudged off its axis. Tip one halfway and it points neither up nor down but in a genuine superposition of both. That is a qubit, and the radio pulses are the logic gates.
 
-You never hear a single molecule. The signal is the combined radio echo of about a quintillion of them doing the same dance at once, which is both the trick that makes liquid NMR readable and the thing that limits it. The dance does not last: molecules tumble, needles drift out of step, and the ensemble loses its sync like a stadium crowd whose synchronized clap slowly dissolves into noise. That is decoherence, and in this kind of hardware you can watch it happen on a timescale of seconds.
+Starting in August 2025 I worked on the 2-qubit version of this: a hydrogen nucleus and a carbon-13 nucleus in the same molecule, addressable separately because each precesses at its own frequency. Programming it means choreographing pulses, not writing circuits. The duration of a pulse sets how far a spin rotates, its phase sets the axis, and a two-qubit gate is mostly a matter of waiting, letting the natural coupling between the two nuclei do the entangling. You never hear a single molecule, either. The readout is the combined radio echo of an entire ensemble relaxing back into line, Fourier-transformed into a spectrum: averages over roughly a quintillion copies rather than the single collapsed answer the textbooks promise.
 
-Since August 2025 I've been working on the 2-qubit version of this: two coupled nuclei per molecule, enough to entangle, enough to run the small algorithms where quantum computing stops being a metaphor and becomes pulse sequences you have to debug. Two qubits sounds small next to the numbers in press releases. But I got interested in this field in 11th grade because superposition sounded impossible, and there is a large difference between believing the textbook and coaxing an actual molecule through a gate you programmed.
+I should be honest about where this landed. The design work is done and written up, and the physical build stalled exactly where a student lab stops being enough, because holding two spins coherent through a gate sequence needs a high-stability spectrometer and control timing we did not have. That was the real lesson. I got into this field in 11th grade because superposition sounded impossible; the hardware taught me that progress in quantum computing is gated less by understanding and more by infrastructure, and that is not a sentence a textbook could have sold me.
+
+[link: the full writeup, pulse sequences and all → https://quantum-systems.hashnode.dev/building-a-2-qubit-quantum-computer-using-liquid-state-nmr]
 
 ## Essay 3
 
@@ -68,8 +70,9 @@ The founder lesson was not technical. It was that the first version we were prou
 Heading: "Elsewhere"
 
 - GitHub → https://github.com/Aarti-panchal01
+- Hashnode → https://hashnode.com/@Aarti-panchal01
+- LinkedIn → https://linkedin.com/in/aarti-panchal-93196a319
 - Email → mailto:aartipanchal539@gmail.com
-- (LinkedIn / Hashnode: only if verified URLs arrive from research; otherwise omit)
 
 Closing line: "Bengaluru, India. This site is a single page on purpose."
 

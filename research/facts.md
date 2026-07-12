@@ -113,8 +113,20 @@ Source: site /Founder, /Projects; repo Shashanksharma280201/Khoj (JavaScript; Aa
 6. LinkedIn unverified → no LinkedIn-sourced facts; link can still appear in footer if user's profile URL is known (it is not — omit link unless found elsewhere).
 7. "Closeli" and "entangle-ed" (named in the user's brief) were NOT found on GitHub (searched), the site, or the web. No facts available → cannot appear on the site.
 
-## Blog (Hashnode)
+## Blog (Hashnode) — found via the site footer's actual "Blog" href
 
-- Site /Dreamer says: "Daily documentation through Instagram reels and Hashnode blog."
-- Direct API/subdomain probes blocked by Cloudflare; web search found no Hashnode publication under her name.
-- Footer "Blog" link href: [pending — being extracted from the rendered site; see below if filled in]
+- Hashnode profile: **https://hashnode.com/@Aarti-panchal01** — hosts 14 blogs, 22 posts total.
+- Profile bio confirms: 3rd-year B.Tech AIML @ PESU EC, founder of Khojapp.in (500+ users), C4GT DMP '26 at Piramal Swasthya mentored by IIIT Hyderabad, GSSoC '26 contributor.
+- quantum-projects.hashnode.dev (8 posts, mostly May 16 2025 + Jan 29 2026): writeups of the quantum-inspired Python repo set (Semiconductor_QD_Project, quantum dice/QRNG, quantum prisoner's dilemma, qdot encryptor/visualizer, stock simulator).
+- quantum-systems.hashnode.dev (3 posts, Jan 30 2026): "Quantum-Enhanced Neuromorphic Sensing"; **"Building a 2-Qubit Quantum Computer Using Liquid-State NMR"** (documents the Quanad Lab work); "From Qubits to Circuits: Building My Foundations in Quantum Computing".
+- The NMR post in detail (https://quantum-systems.hashnode.dev/building-a-2-qubit-quantum-computer-using-liquid-state-nmr, subtitle "Pulse sequences, Hamiltonians, and why hardware destroys ideal theory", updated Jan 30 2026): qubits are spin-1/2 nuclei (1H, 13C) addressed via Zeeman splitting and distinct Larmor frequencies; gates are timed RF pulses (duration → rotation angle, phase → rotation axis, delays → J-coupling for two-qubit gates); room-temperature NMR gives thermal ensembles so pseudo-pure states are required; readout is Free Induction Decay + Fourier transform yielding expectation values, not projective measurement; FPGA nanosecond timing is the control bottleneck. **The post is candid that the physical build stopped due to lack of access to a high-stability NMR spectrometer / hardware precision beyond a student lab; her stated takeaway: "quantum computing progress is determined more by infrastructure than intelligence."**
+- IMPORTANT DISCREPANCY: the live site presents the NMR build as ongoing current work; her own blog says the physical build stalled. The new site follows the blog (more recent, more candid).
+- 11 single-post project blogs (May 2025 / Jan 2026): Destiny Scanner, Explain-O-Fun, Tone Tamer AI, Calm Cash Compass, RideCompare.AI, AI Manipulation Detector (deceptive **speech** detection — confirms repo description over the site's "images" claim), India Pulse, PESIOT Spark, AURA, NEXUS, LIFE XP, MindCraft.
+
+## External links (verified from the live site's own footer hrefs)
+
+- Blog: https://hashnode.com/@Aarti-panchal01
+- LinkedIn: https://linkedin.com/in/aarti-panchal-93196a319
+- Instagram: https://instagram.com/aarrrtiiii47
+- GitHub: https://github.com/Aarti-panchal01
+- Resume PDF hosted on base44 media CDN.
