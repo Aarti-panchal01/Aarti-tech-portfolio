@@ -1,5 +1,7 @@
 # Decisions made unilaterally during the build
 
+0. **v2 redesign (user feedback, 2026-07-12 evening).** Rebuilt from the four-essay single page to the requested shape, after rendering and screenshotting hemanthsbanur.in as the structural model: a minimal black homepage (name, role line, one paragraph covering degree/university/work/highlights, two short personal lines, icon-only footer with GitHub/LinkedIn/Hashnode/email) plus a separate /about page covering Khoj, the C4GT fellowship, the pre-fellowship AMRIT contributions, Quanad Lab, other builds, and the "if you want X, go to Y" routing paragraph. Theme is black-only (no light mode, matching the reference); body font switched from serif to Inter; the essay content was condensed into the About prose. All v1 fact rules still hold; the closing line "One life. Why not just do it all." is verbatim from her old site's Dreamer page.
+
 Each of these was an ambiguity or conflict not covered by the brief. The call made, and why:
 
 1. **"Closeli" and "entangle-ed" are not on the site.** The brief named both, but neither exists on her GitHub (searched), on aarti-panchal.site, or anywhere findable on the web. Rule applied: no fact in `research/facts.md`, no claim on the site. If these are real (private repos? different names?), send me the links and they can be added.

@@ -1,83 +1,67 @@
-# Final site copy (canonical — implementation must use this text verbatim)
+# Final site copy — v2 (canonical)
 
-Every claim traces to research/facts.md. Do not add, embellish, or reorder facts.
+v2 direction (user feedback, 2026-07-12): two pages, modeled directly on hemanthsbanur.in
+(verified by rendering + screenshots: pure black, tiny nav "About | Blogs", small "heya, I'm" +
+large name + hairline, one role line with pipe separators, two personal lines, icon-only footer;
+About page = short first-person prose). Black theme, not warm/brown. Every claim traces to
+research/facts.md.
 
 ## Meta
 
 - Title: "Aarti Panchal"
 - Description: "Engineer at PES University, Bengaluru. C4GT 2026 fellow rebuilding India's 104 health helpline UI. Founder of Khoj. Writes about NMR quantum computing and research agents."
 
-## Intro / bio
+## Nav (both pages)
 
-# Aarti Panchal
+- Left: "ap" mark (mono), links to /
+- Right, home page: About | Blogs
+- Right, about page: Home | Blogs
+- "Blogs" is external: https://hashnode.com/@Aarti-panchal01
 
-I'm an AI and machine learning undergrad at PES University in Bengaluru. Most of what I do outside class is take messy systems and give them structure: a 2017-era Angular codebase behind India's 104 public health helpline, a campus lost-and-found that used to live in WhatsApp groups, and a vial of molecules we tried to turn into a 2-qubit computer.
+## Homepage (/)
 
-**Currently:** rebuilding Helpline104-UI on Angular 20 for AMRIT (Piramal Swasthya) as a Code for GovTech 2026 fellow.
+hey, I'm
+# Aarti
+(hairline rule)
 
-Outside of code I'm an NCC Air Wing cadet. I flew my first microlight sortie at 17 and my second over Yelahanka Air Force Station on my 18th birthday.
+C4GT '26 Fellow @ Piramal Swasthya  |  Founder @ Khoj  |  B.Tech AIML @ PES University
 
-## Essay 1
+I'm doing my B.Tech in AI and Machine Learning at PES University, Electronic City Campus, Bengaluru. Right now I'm a Code for GovTech 2026 fellow with AMRIT (Piramal Swasthya), rebuilding the UI of India's 104 public health helpline from Angular 4 to Angular 20. Before that I founded Khoj, a campus lost-and-found platform that launched at PES in January 2026 and has grown past 500 users across Bengaluru, spent a year on a 2-qubit NMR quantum computer at Quanad Lab, and shipped 20+ projects, from a LangGraph research agent that grades its own results to on-chain credential verification built in a 24-hour hackathon.
 
-### Rebuilding the plane India's 104 helpline flies on
+I like systems that push back: legacy Angular, NMR spectrometers, campus WhatsApp groups.
+I build what I want to see.
 
-When you call 104 in much of India, a call-center agent picks up and works through a web app: registering who you are, pulling case history, recording medical advice or a grievance, sometimes walking through a clinical decision tree. That app was built on Angular 4.1.3, released in 2017. The framework it sits on is not just old, it is discontinued: the HTTP layer it uses was deleted from Angular years ago, its component library never left beta, and its build system doesn't exist anymore.
-
-The usual way to upgrade Angular is `ng update`, one version at a time. That works like renovating a house room by room while you live in it, and it works only when the walls are sound. Here the walls themselves were discontinued. So my C4GT 2026 project with AMRIT (the health platform run by Piramal Swasthya) takes the other route: build a new house next door on a modern foundation, and move everything across deliberately. A fresh Angular 20 workspace, then component by component, service by service, the old behavior is reconstructed on primitives that actually exist in 2026: standalone components instead of one giant module, functional interceptors instead of hand-rolled `Http` subclasses, RxJS 7 pipes across roughly a hundred files, and ZardUI on Tailwind in place of jQuery and an abandoned Material beta.
-
-The legacy app is about 118 components and 65 services, and the work is deciding, for each one, what is load-bearing behavior and what is 2017 scaffolding. Since June 10 I've landed the foundation, auth flows, the agent dashboard, the inbound-call workspace with its CTI event listener and call timer, beneficiary registration, SNOMED CT search, prescription and screening forms, and the report suites. The part I find satisfying is that none of this is greenfield glamour. It's public infrastructure that clinical staff depend on every day, and the whole point is that when it ships, nothing about their job should feel broken.
-
-[link: the migration, commit by commit → https://github.com/PSMRI/Helpline104-UI-NEXT | project log → https://github.com/Aarti-panchal01/c4gt-2026-amrit]
-
-## Essay 2
-
-### A computer made of spinning nuclei
-
-The quantum computer I worked on at Quanad Lab is not a golden chandelier in a dilution fridge. It is a small vial of liquid. Every molecule in that vial is identical, and inside each one sit atomic nuclei that behave like tiny compass needles. Put the vial in a strong magnetic field and the needles line up. Hit them with a precisely timed radio pulse and they tip and start to precess, like a spinning top nudged off its axis. Tip one halfway and it points neither up nor down but in a genuine superposition of both. That is a qubit, and the radio pulses are the logic gates.
-
-Starting in August 2025 I worked on the 2-qubit version of this: a hydrogen nucleus and a carbon-13 nucleus in the same molecule, addressable separately because each precesses at its own frequency. Programming it means choreographing pulses, not writing circuits. The duration of a pulse sets how far a spin rotates, its phase sets the axis, and a two-qubit gate is mostly a matter of waiting, letting the natural coupling between the two nuclei do the entangling. You never hear a single molecule, either. The readout is the combined radio echo of an entire ensemble relaxing back into line, Fourier-transformed into a spectrum: averages over roughly a quintillion copies rather than the single collapsed answer the textbooks promise.
-
-I should be honest about where this landed. The design work is done and written up, and the physical build stalled exactly where a student lab stops being enough, because holding two spins coherent through a gate sequence needs a high-stability spectrometer and control timing we did not have. That was the real lesson. I got into this field in 11th grade because superposition sounded impossible; the hardware taught me that progress in quantum computing is gated less by understanding and more by infrastructure, and that is not a sentence a textbook could have sold me.
-
-[link: the full writeup, pulse sequences and all → https://quantum-systems.hashnode.dev/building-a-2-qubit-quantum-computer-using-liquid-state-nmr]
-
-## Essay 3
-
-### An agent that grades its own homework
-
-Most AI "research agents" have a failure mode: they search once, summarize whatever came back, and present it with full confidence. The interesting engineering problem is not making a model search the web. It is making the system notice when its own results are bad.
-
-ARIA is my attempt at that. It is built as a LangGraph state machine with seven nodes, and the one that matters most is the critic. A planner breaks the research goal into six concrete subtasks, an executor runs web searches for each, and then the critic scores every result from 0 to 10 for relevance and quality. If the average falls below 7, the answer is not "ship it anyway." A replanner rewrites the subtasks and the loop runs again. Findings that survive get written to a ChromaDB vector store, so the next session on a related topic starts with memory instead of amnesia, and the output is a structured markdown report rather than a wall of prose.
-
-The honest status: the core loop works, and the UI and test suite are still in progress. But the design conviction stands, and it is the same one I apply everywhere: a system that cannot tell when it is wrong will confidently be wrong, so build the skeptic into the architecture instead of hoping the first draft is good.
-
-[link: ARIA on GitHub → https://github.com/Aarti-panchal01/aria-agent]
-
-## Essay 4
-
-### A lost-and-found is state, not a stream
-
-Khoj started with a lost iPhone charger and a WhatsApp group with 500 unread messages. Someone had found the charger. The owner never saw the post, because a group chat is a stream: everything scrolls away at the speed people type. A lost-and-found is the opposite kind of data. It is state. A found charger stays found until someone claims it, and the system's whole job is to keep that fact visible and searchable for as long as it is true.
-
-So we built the boring, correct thing: a web app where lost and found items are posts with a category, a campus, a status, and a photo, instead of message number 501. React on the front, Express and MongoDB behind it, JWT auth so posts belong to real students. I pitched the MVP at NITK's Incub8, took the feedback, rebuilt it from scratch, and we launched at PES University on January 14, 2026. It has since grown to over 500 users across Bengaluru campuses.
-
-The founder lesson was not technical. It was that the first version we were proud of was the one we threw away, and the version people actually use is plainer than anything we would have designed for a demo.
-
-[link: Khoj on GitHub → https://github.com/Shashanksharma280201/Khoj]
-
-## Footer / links
-
-Heading: "Elsewhere"
-
+(footer: icon links only)
 - GitHub → https://github.com/Aarti-panchal01
-- Hashnode → https://hashnode.com/@Aarti-panchal01
 - LinkedIn → https://linkedin.com/in/aarti-panchal-93196a319
+- Hashnode → https://hashnode.com/@Aarti-panchal01
 - Email → mailto:aartipanchal539@gmail.com
 
-Closing line: "Bengaluru, India. This site is a single page on purpose."
+## About page (/about)
 
-## Notes for implementation
+## About me
+(hairline rule)
 
-- No em dashes anywhere in body copy (use commas, colons, or periods).
-- Headings and copy above are final; typographic quotes may be normalized.
-- Essay links render as quiet inline links at the end of each essay, not buttons.
+I'm Aarti Panchal. My GitHub bio says "I build what I want to see," and this page is the longer version of that sentence.
+
+Khoj exists because a lost iPhone charger died in a WhatsApp group with 500 unread messages. A group chat is a stream, everything scrolls away; a lost-and-found is state, a found charger stays found until someone claims it. So we built the plain, correct thing: lost and found items as posts with a category, a campus, a status, and a photo. React in front, Express and MongoDB behind, JWT auth so posts belong to real students. I pitched the MVP at NITK's Incub8, rebuilt it from the feedback, and we launched at PES University on January 14, 2026. It has since grown past 500 users across Bengaluru campuses.
+
+The C4GT fellowship is the deepest technical work I've done. When you call 104 in much of India, a call-center agent works through a web app built on Angular 4.1.3, a framework whose HTTP layer, component library, and build system no longer exist. Upgrading version by version works like renovating a house room by room, and only when the walls are sound; here the walls themselves were discontinued. So the project builds a new house next door: a fresh Angular 20 workspace, and the old app's roughly 118 components and 65 services reconstructed deliberately on modern primitives, standalone components, functional interceptors, RxJS 7, ZardUI on Tailwind. Since June 10 I've landed the foundation, the auth flows, the agent dashboard, the inbound-call workspace with its CTI event listener and call timer, beneficiary registration, SNOMED CT search, prescription and screening forms, and the report suites. Of the repo's 95 commits, 94 are mine. It is public health infrastructure that clinical staff use every day, and when it ships, nothing about their job should feel broken.
+
+Before the fellowship I was already contributing to AMRIT's open repos: merged cleanups in MMU-UI, the ZardUI v2 component library in Common-UI (Button, Dialog, Form, Input, Loader, Pagination, Table, Toast), accessibility and test-suite fixes across the helpline modules. I'm a GSSoC '26 contributor as well.
+
+For about a year, starting August 2025, I worked at Quanad Lab on a 2-qubit quantum computer made of liquid: nuclear spins as qubits, radio pulses as gates, entanglement from the natural coupling between a hydrogen and a carbon-13 nucleus in the same molecule. The design work is done and written up; the physical build stalled exactly where a student lab stops being enough, because holding two spins coherent needs a high-stability spectrometer we did not have. It taught me that progress in quantum computing is gated less by understanding and more by infrastructure, which is not a sentence a textbook could have sold me.
+
+There's more: ARIA, a LangGraph research agent whose critic node scores every result and forces a replan below 7/10; ProofChain AI, on-chain developer credential verification built in about 24 hours at RIFT '26; a rank of 113 out of 200+ in the AWS AI League at AWS Summit Bengaluru 2026, in a field that included working engineers. Outside of code I'm an NCC Air Wing cadet: 10+ camps, 2 nationals, the Best Air Contingent Award at AIVSC 2024, and a microlight sortie over Yelahanka Air Force Station on my 18th birthday.
+
+If you want to see what I build, go to my GitHub. If you want the formal version, go to my LinkedIn. If you want to read how I think, go to my blogs. If you want to talk, write to aartipanchal539@gmail.com.
+
+(closing line, small italic:) One life. Why not just do it all.
+
+(footer: same icon links)
+
+## Rules
+
+- Black theme (near-black background, light text), single theme, no light mode.
+- No em dashes anywhere.
+- "go to my GitHub / LinkedIn / blogs" phrases are links to the respective URLs; the email address is a mailto link.
