@@ -124,6 +124,95 @@ code {
   color: var(--ink);
 }
 
+/* Blog article body: styles Hashnode-exported HTML to match the site. */
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-top: 2.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.post-content h2 {
+  font-size: 1.35rem;
+}
+
+.post-content h3 {
+  font-size: 1.15rem;
+}
+
+.post-content h4 {
+  font-size: 1rem;
+}
+
+.post-content p {
+  margin-top: 1.1rem;
+}
+
+.post-content ul,
+.post-content ol {
+  margin-top: 1.1rem;
+  padding-left: 1.4rem;
+}
+
+.post-content ul {
+  list-style: disc;
+}
+
+.post-content ol {
+  list-style: decimal;
+}
+
+.post-content li {
+  margin-top: 0.35rem;
+}
+
+.post-content blockquote {
+  margin-top: 1.1rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent);
+  color: var(--soft);
+}
+
+.post-content pre {
+  margin-top: 1.1rem;
+  padding: 1rem;
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1.1rem;
+  border-radius: 6px;
+}
+
+.post-content table {
+  margin-top: 1.1rem;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  display: block;
+  overflow-x: auto;
+}
+
+.post-content th,
+.post-content td {
+  border: 1px solid var(--hairline);
+  padding: 0.45rem 0.7rem;
+  text-align: left;
+}
+
+.post-content hr {
+  margin-top: 2rem;
+  border-color: var(--hairline);
+}
+
 /* Constellation canvas: fixed behind everything, never intercepts input. */
 .constellation {
   position: fixed;

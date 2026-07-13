@@ -55,7 +55,7 @@ export default function About() {
           <span className="whitespace-nowrap">2-qubit</span> quantum computer
           made of liquid: nuclear spins as qubits, radio pulses as gates. The
           design is done and{" "}
-          <a href="https://quantum-systems.hashnode.dev/building-a-2-qubit-quantum-computer-using-liquid-state-nmr">
+          <a href="/blog/2-qubit-quantum-computer-liquid-state-nmr/">
             written up
           </a>
           ; the physical build stalled where a student lab stops being enough.
@@ -108,7 +108,7 @@ export default function About() {
               <span className="num" aria-hidden="true">
                 &rarr;&ensp;
               </span>
-              <a href="https://hashnode.com/@Aarti-panchal01">my blogs</a>
+              <a href="/blog/">my blog</a>
             </span>
           </li>
           <li className="flex flex-col sm:flex-row sm:gap-x-3">
