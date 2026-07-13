@@ -73,62 +73,62 @@ export default function About() {
           sortie over Yelahanka on my 18th birthday.
         </p>
 
-        <ul className="mt-8 list-none space-y-2">
-          <li className="flex flex-wrap gap-x-3">
-            <span className="label w-36 shrink-0 pt-1 text-soft">
+        <ul className="mt-8 list-none space-y-4 sm:space-y-2">
+          <li className="flex flex-col sm:flex-row sm:gap-x-3">
+            <span className="label shrink-0 text-soft sm:w-36 sm:pt-1">
               my projects
             </span>
             <span>
               <span className="num" aria-hidden="true">
-                →&ensp;
+                &rarr;&ensp;
               </span>
               <a href="https://github.com/Aarti-panchal01">
                 stalk my GitHub, it&rsquo;s public anyway
               </a>
             </span>
           </li>
-          <li className="flex flex-wrap gap-x-3">
-            <span className="label w-36 shrink-0 pt-1 text-soft">
+          <li className="flex flex-col sm:flex-row sm:gap-x-3">
+            <span className="label shrink-0 text-soft sm:w-36 sm:pt-1">
               the formal version
             </span>
             <span>
               <span className="num" aria-hidden="true">
-                →&ensp;
+                &rarr;&ensp;
               </span>
               <a href="https://linkedin.com/in/aarti-panchal-93196a319">
                 LinkedIn, where I pretend to be serious
               </a>
             </span>
           </li>
-          <li className="flex flex-wrap gap-x-3">
-            <span className="label w-36 shrink-0 pt-1 text-soft">
+          <li className="flex flex-col sm:flex-row sm:gap-x-3">
+            <span className="label shrink-0 text-soft sm:w-36 sm:pt-1">
               how I think
             </span>
             <span>
               <span className="num" aria-hidden="true">
-                →&ensp;
+                &rarr;&ensp;
               </span>
               <a href="https://hashnode.com/@Aarti-panchal01">my blogs</a>
             </span>
           </li>
-          <li className="flex flex-wrap gap-x-3">
-            <span className="label w-36 shrink-0 pt-1 text-soft">
+          <li className="flex flex-col sm:flex-row sm:gap-x-3">
+            <span className="label shrink-0 text-soft sm:w-36 sm:pt-1">
               the creative side
             </span>
             <span>
               <span className="num" aria-hidden="true">
-                →&ensp;
+                &rarr;&ensp;
               </span>
               <a href="https://aarti-panchal.site">aarti-panchal.site</a>
             </span>
           </li>
-          <li className="flex flex-wrap gap-x-3">
-            <span className="label w-36 shrink-0 pt-1 text-soft">
+          <li className="flex flex-col sm:flex-row sm:gap-x-3">
+            <span className="label shrink-0 text-soft sm:w-36 sm:pt-1">
               everything else
             </span>
             <span>
               <span className="num" aria-hidden="true">
-                →&ensp;
+                &rarr;&ensp;
               </span>
               <a href="mailto:aartipanchal539@gmail.com">
                 aartipanchal539@gmail.com
