@@ -32,8 +32,9 @@ html {
   background-color: var(--bg);
 }
 
+/* No background on body: it would paint over the fixed constellation
+   canvas (negative z-index). html carries the page background instead. */
 body {
-  background-color: var(--bg);
   color: var(--ink);
   font-family: var(--font-sans);
   font-size: 1.0625rem;
@@ -121,6 +122,14 @@ code {
 
 .icon-link:hover {
   color: var(--ink);
+}
+
+/* Constellation canvas: fixed behind everything, never intercepts input. */
+.constellation {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
 }
 
 /*

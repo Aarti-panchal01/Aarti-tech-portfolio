@@ -82,7 +82,9 @@ export default function About() {
               <span className="num" aria-hidden="true">
                 →&ensp;
               </span>
-              <a href="https://github.com/Aarti-panchal01">GitHub</a>
+              <a href="https://github.com/Aarti-panchal01">
+                stalk my GitHub, it&rsquo;s public anyway
+              </a>
             </span>
           </li>
           <li className="flex flex-wrap gap-x-3">
@@ -94,7 +96,7 @@ export default function About() {
                 →&ensp;
               </span>
               <a href="https://linkedin.com/in/aarti-panchal-93196a319">
-                LinkedIn
+                LinkedIn, where I pretend to be serious
               </a>
             </span>
           </li>

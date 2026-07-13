@@ -9,7 +9,7 @@ export default function Home() {
       <main className="pt-[max(1.25rem,3vh)] pb-4">
         <p className="label text-soft">hey, I&rsquo;m</p>
         <h1 className="text-4xl font-medium tracking-tight sm:text-5xl">
-          Aarti
+          Aarti Panchal
           <span className="orbit" aria-hidden="true">
             <span className="orbit-dot" />
           </span>
@@ -27,7 +27,8 @@ export default function Home() {
 
         <p className="mt-4">
           My pattern is simple: find something chaotic, give it a spine. A
-          lost charger drowning in campus WhatsApp groups became Khoj. The
+          lost charger drowning in campus WhatsApp groups became{" "}
+          <a href="https://khojapp.in">Khoj</a>. The
           2017-era code behind India&rsquo;s 104 health helpline is becoming a
           clean Angular 20 app, one component at a time. Molecules in a vial
           almost became a computer. The AIML degree at PES is the excuse;
