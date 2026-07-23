@@ -131,3 +131,10 @@ Source: site /Founder, /Projects; repo Shashanksharma280201/Khoj (JavaScript; Aa
 - Instagram: https://instagram.com/aarrrtiiii47
 - GitHub: https://github.com/Aarti-panchal01
 - Resume PDF hosted on base44 media CDN.
+
+## v6 additions (user-provided, 2026-07-23)
+
+- Inverix (early-stage startup): product engineer. Built production multilingual voice AI endpoint — Hindi/Kannada/Telugu/Tamil, sub-1.4s latency, real phone calls. Integrated Aadhaar/OVS government biometric API. Led independent vendor calls. (User-stated; consistent with voxharness README's "built from shipping production voice AI".)
+- voxharness: open-source CI harness testing voice AI agents over real phone calls, zero humans; latency/repetition/naturalness in Hindi/Kannada/Telugu/Tamil. Repo: github.com/Aarti-panchal01/voxharness (verified public, CI green). Web: voxharness-web.vercel.app (verified live). Stack: Python, Twilio Media Streams, Sarvam AI, Groq. (Brief said FastAPI; repo uses aiohttp — FastAPI not claimed.)
+- ARIA live at agent-aria.streamlit.app; repo Aarti-panchal01/aria-agent has tests/ (6 test modules) + .github/workflows/ci.yml (verified). "69 tests passing" is user-stated.
+- C4GT: 28 PRs merged; real CTI calls tested via Zoiper5. (User-stated.)

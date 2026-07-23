@@ -41,13 +41,38 @@ export default function About() {
           on a fresh Angular 20 workspace: roughly 118 components and 65
           services reconstructed on standalone components, functional
           interceptors, RxJS 7, and ZardUI. Of the repo&rsquo;s 95 commits, 94
-          are mine, and I&rsquo;m{" "}
+          are mine across 28 merged PRs, the telephony screens are exercised
+          against real CTI calls through Zoiper5, and I&rsquo;m{" "}
           <a href="https://github.com/Aarti-panchal01/c4gt-2026-amrit">
             documenting the whole migration here
           </a>
           . Before the fellowship I&rsquo;d already landed contributions
           across AMRIT&rsquo;s open repos, and I contribute through GSSoC
           &rsquo;26 too.
+        </p>
+
+        <p className="mt-6">
+          At Inverix, an early-stage startup, I worked as a product engineer
+          and shipped the thing I&rsquo;m proudest of: a production
+          multilingual voice AI endpoint that holds real phone calls in
+          Hindi, Kannada, Telugu, and Tamil at sub-1.4s latency. I also
+          integrated Aadhaar biometric attendance through the government
+          OVS API, the kind of badly-documented integration people assume
+          only big companies attempt, and ran vendor calls on my own.
+        </p>
+
+        <p className="mt-6">
+          That job left a scar: I was the one dialing our own agent after
+          every change, listening for regressions by ear. So I built{" "}
+          <a href="https://github.com/Aarti-panchal01/voxharness">
+            voxharness
+          </a>
+          , an open-source CI harness that tests voice AI agents over real
+          phone calls with zero humans involved. It calls your agent, plays
+          the customer in Hindi, Kannada, Telugu, or Tamil, and scores every
+          response for latency, repetition, and naturalness. Python, Twilio
+          Media Streams, Sarvam AI for speech, Groq as the judge; there&rsquo;s
+          a <a href="https://voxharness-web.vercel.app">live dashboard</a> too.
         </p>
 
         <p className="mt-6">
@@ -64,9 +89,13 @@ export default function About() {
         </p>
 
         <p className="mt-6">
-          Also: ARIA, a LangGraph research agent that grades its own results
-          and replans anything under 7/10; ProofChain AI, on-chain developer
-          credential verification built in about 24 hours at RIFT &rsquo;26;
+          Also: <a href="https://agent-aria.streamlit.app">ARIA</a>, a
+          LangGraph research agent with a structured four-dimension critic
+          and targeted replanning &mdash; it pulls from arXiv, Wikipedia,
+          GitHub, and the web, exports to PDF, keeps persistent sessions,
+          and ships with 69 tests passing in CI; ProofChain AI, on-chain
+          developer credential verification built in about 24 hours at RIFT
+          &rsquo;26;
           rank 113 of 200+ in the AWS AI League at AWS Summit Bengaluru 2026.
           Outside of code I&rsquo;m an NCC Air Wing cadet: 10+ camps, 2
           nationals, Best Air Contingent Award at AIVSC 2024, and a microlight
