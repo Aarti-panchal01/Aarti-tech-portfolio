@@ -32,12 +32,18 @@ export default function Home() {
           lost charger drowning in campus WhatsApp groups became{" "}
           <a href="https://khojapp.in">Khoj</a>. Picking up my own test calls
           at Inverix became{" "}
-          <a href="https://github.com/Aarti-panchal01/voxharness">voxharness</a>,
-          a CI harness that tests voice agents over real phone calls. The
-          2017-era code behind India&rsquo;s 104 health helpline is becoming a
-          clean Angular 20 app, one component at a time. Molecules in a vial
-          almost became a computer. The AIML degree at PES is the excuse;
-          shipping is the actual education.
+          <a href="https://voxharness-web.vercel.app">voxharness</a>, a CI
+          harness that tests voice agents over real phone calls. The 2017-era
+          code behind India&rsquo;s{" "}
+          <a href="https://github.com/PSMRI/Helpline104-UI-NEXT">
+            104 health helpline
+          </a>{" "}
+          is becoming a clean Angular 20 app, one component at a time. A
+          research question I couldn&rsquo;t stop pulling on became{" "}
+          <a href="https://agent-aria.streamlit.app">ARIA</a>, an agent that
+          grades its own work and replans. Molecules in a vial almost became a
+          computer. The AIML degree at PES is the excuse; shipping is the
+          actual education.
         </p>
 
         <ul className="mt-4 list-none space-y-1 text-soft">
@@ -46,17 +52,9 @@ export default function Home() {
               ▸
             </span>
             <span>
-              <span className="num">500+</span> students on Khoj across
-              Bengaluru campuses
-            </span>
-          </li>
-          <li className="flex gap-3">
-            <span className="num" aria-hidden="true">
-              ▸
-            </span>
-            <span>
-              <span className="num">2</span> qubits of liquid-state NMR at
-              Quanad Lab, <span className="num">1</span> year of pulses
+              <span className="num">500+</span> students on{" "}
+              <a href="https://khojapp.in">Khoj</a> across{" "}
+              <span className="num">20+</span> Bengaluru campuses
             </span>
           </li>
           <li className="flex gap-3">
@@ -65,7 +63,48 @@ export default function Home() {
             </span>
             <span>
               <span className="num">sub-1.4s</span> multilingual voice AI on
-              real phone calls, in production at Inverix
+              real phone calls &mdash; Hindi, Kannada, Telugu, Tamil
+            </span>
+          </li>
+          <li className="flex gap-3">
+            <span className="num" aria-hidden="true">
+              ▸
+            </span>
+            <span>
+              <span className="num">28</span> PRs merged to India&rsquo;s
+              national{" "}
+              <a href="https://github.com/PSMRI/Helpline104-UI-NEXT">
+                104 health helpline
+              </a>{" "}
+              (Angular 4&rarr;20, solo)
+            </span>
+          </li>
+          <li className="flex gap-3">
+            <span className="num" aria-hidden="true">
+              ▸
+            </span>
+            <span>
+              <a href="https://voxharness-web.vercel.app">voxharness</a>:
+              open-source CI harness for voice agents,{" "}
+              <span className="num">69</span> tests passing
+            </span>
+          </li>
+          <li className="flex gap-3">
+            <span className="num" aria-hidden="true">
+              ▸
+            </span>
+            <span>
+              <a href="https://agent-aria.streamlit.app">ARIA</a>: autonomous
+              research agent, live at agent-aria.streamlit.app
+            </span>
+          </li>
+          <li className="flex gap-3">
+            <span className="num" aria-hidden="true">
+              ▸
+            </span>
+            <span>
+              <span className="num">2</span> qubits of NMR quantum computing at
+              Quanad Lab
             </span>
           </li>
           <li className="flex gap-3">
@@ -74,15 +113,6 @@ export default function Home() {
             </span>
             <span>
               <span className="num">20+</span> shipped projects
-            </span>
-          </li>
-          <li className="flex gap-3">
-            <span className="num" aria-hidden="true">
-              ▸
-            </span>
-            <span>
-              <span className="num">2</span> NCC nationals and a Best Air
-              Contingent Award
             </span>
           </li>
         </ul>

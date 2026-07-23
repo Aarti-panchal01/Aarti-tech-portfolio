@@ -18,88 +18,126 @@ export default function About() {
 
         <p className="mt-8">
           I&rsquo;m Aarti Panchal. My GitHub bio says &ldquo;I build what I
-          want to see,&rdquo; and this page is the longer version of that
-          sentence.
+          want to see&rdquo;; here&rsquo;s the skimmable version.
         </p>
 
-        <p className="mt-6">
-          Khoj exists because a lost iPhone charger died in a WhatsApp group
-          with 500 unread messages. A group chat is a stream, everything
-          scrolls away; a lost-and-found is state, a found item stays found
-          until someone claims it. So we built the plain, correct thing: posts
-          with a category, a campus, a status, and a photo. React, Express,
-          MongoDB. I pitched the MVP at NITK&rsquo;s Incub8, rebuilt it from
-          the feedback, and we launched at PES University on January 14, 2026.
-          It&rsquo;s live at <a href="https://khojapp.in">khojapp.in</a>.
+        {/* What I do */}
+        <h2 className="label mt-10 border-b border-hairline pb-2 text-soft">
+          What I do
+        </h2>
+        <p className="mt-4">
+          I&rsquo;m a product engineer at{" "}
+          <a href="https://inverix.in">Inverix</a>, where I built a production
+          multilingual voice AI endpoint that holds real phone calls, and a
+          C4GT &rsquo;26 fellow rebuilding India&rsquo;s 104 health helpline.
+          My job, over and over, is turning something chaotic into software
+          that ships &mdash; lately, voice agents that get tested automatically.
         </p>
 
-        <p className="mt-6">
-          The C4GT fellowship is my deepest technical work. India&rsquo;s 104
-          helpline runs on a web app built with Angular 4.1.3, a framework
-          whose HTTP layer, component library, and build system no longer
-          exist, so upgrading in place was impossible. I&rsquo;m rebuilding it
-          on a fresh Angular 20 workspace: roughly 118 components and 65
-          services reconstructed on standalone components, functional
-          interceptors, RxJS 7, and ZardUI. Of the repo&rsquo;s 95 commits, 94
-          are mine across 28 merged PRs, the telephony screens are exercised
-          against real CTI calls through Zoiper5, and I&rsquo;m{" "}
-          <a href="https://github.com/Aarti-panchal01/c4gt-2026-amrit">
-            documenting the whole migration here
-          </a>
-          . Before the fellowship I&rsquo;d already landed contributions
-          across AMRIT&rsquo;s open repos, and I contribute through GSSoC
-          &rsquo;26 too.
-        </p>
+        {/* What I've shipped */}
+        <h2 className="label mt-10 border-b border-hairline pb-2 text-soft">
+          What I&rsquo;ve shipped
+        </h2>
+        <ul className="mt-4 list-none space-y-4">
+          <li>
+            <span className="font-medium text-ink">
+              <a href="https://voxharness-web.vercel.app">voxharness</a>
+            </span>{" "}
+            &mdash; voice AI CI testing harness; calls your agent, plays the
+            customer, scores it. Zero humans.{" "}
+            <span className="label text-soft">
+              <a href="https://voxharness-web.vercel.app">Live &#8599;</a>
+              &ensp;
+              <a href="https://github.com/Aarti-panchal01/voxharness">
+                GitHub &#8599;
+              </a>
+            </span>
+          </li>
+          <li>
+            <span className="font-medium text-ink">
+              <a href="https://agent-aria.streamlit.app">ARIA</a>
+            </span>{" "}
+            &mdash; autonomous research agent that grades its own work and
+            replans.{" "}
+            <span className="label text-soft">
+              <a href="https://agent-aria.streamlit.app">Live &#8599;</a>
+              &ensp;
+              <a href="https://github.com/Aarti-panchal01/aria-agent">
+                GitHub &#8599;
+              </a>
+            </span>
+          </li>
+          <li>
+            <span className="font-medium text-ink">
+              <a href="https://khojapp.in">Khoj</a>
+            </span>{" "}
+            &mdash; campus lost-and-found, 500+ users across 20+ campuses.{" "}
+            <span className="label text-soft">
+              <a href="https://khojapp.in">Live &#8599;</a>
+              &ensp;
+              <a href="https://github.com/Aarti-panchal01">GitHub &#8599;</a>
+            </span>
+          </li>
+          <li>
+            <span className="font-medium text-ink">
+              <a href="https://github.com/PSMRI/Helpline104-UI-NEXT">
+                Helpline104
+              </a>
+            </span>{" "}
+            &mdash; India&rsquo;s national 104 helpline, Angular 4&rarr;20
+            migration (solo, 28 PRs).{" "}
+            <span className="label text-soft">
+              <a href="https://github.com/PSMRI/Helpline104-UI-NEXT">
+                GitHub &#8599;
+              </a>
+            </span>
+          </li>
+        </ul>
 
-        <p className="mt-6">
-          At Inverix, an early-stage startup, I worked as a product engineer
-          and shipped the thing I&rsquo;m proudest of: a production
-          multilingual voice AI endpoint that holds real phone calls in
-          Hindi, Kannada, Telugu, and Tamil at sub-1.4s latency. I also
-          integrated Aadhaar biometric attendance through the government
-          OVS API, the kind of badly-documented integration people assume
-          only big companies attempt, and ran vendor calls on my own.
-        </p>
+        {/* Where I work */}
+        <h2 className="label mt-10 border-b border-hairline pb-2 text-soft">
+          Where I work
+        </h2>
+        <ul className="mt-4 list-none space-y-3 text-soft">
+          <li className="flex gap-3">
+            <span className="num" aria-hidden="true">
+              ▸
+            </span>
+            <span>
+              <span className="text-ink">Product Engineer at Inverix</span>{" "}
+              &mdash; multilingual voice AI (sub-1.4s, real calls), Aadhaar/OVS
+              integration
+            </span>
+          </li>
+          <li className="flex gap-3">
+            <span className="num" aria-hidden="true">
+              ▸
+            </span>
+            <span>
+              <span className="text-ink">
+                C4GT 2026 Fellow at Piramal Swasthya
+              </span>{" "}
+              &mdash; rebuilding India&rsquo;s 104 health helpline
+            </span>
+          </li>
+          <li className="flex gap-3">
+            <span className="num" aria-hidden="true">
+              ▸
+            </span>
+            <span>
+              <span className="text-ink">Founder of Khoj</span> &mdash; 500+
+              users, 20+ Bengaluru campuses
+            </span>
+          </li>
+        </ul>
 
-        <p className="mt-6">
-          That job left a scar: I was the one dialing our own agent after
-          every change, listening for regressions by ear. So I built{" "}
-          <a href="https://github.com/Aarti-panchal01/voxharness">
-            voxharness
-          </a>
-          , an open-source CI harness that tests voice AI agents over real
-          phone calls with zero humans involved. It calls your agent, plays
-          the customer in Hindi, Kannada, Telugu, or Tamil, and scores every
-          response for latency, repetition, and naturalness. Python, Twilio
-          Media Streams, Sarvam AI for speech, Groq as the judge; there&rsquo;s
-          a <a href="https://voxharness-web.vercel.app">live dashboard</a> too.
-        </p>
-
-        <p className="mt-6">
-          At Quanad Lab I spent a year, from August 2025, on a{" "}
-          <span className="whitespace-nowrap">2-qubit</span> quantum computer
-          made of liquid: nuclear spins as qubits, radio pulses as gates. The
-          design is done and{" "}
+        <p className="mt-8 text-soft">
+          Also: a 2-qubit liquid-state NMR quantum computer at Quanad Lab (
           <a href="/blog/2-qubit-quantum-computer-liquid-state-nmr/">
             written up
           </a>
-          ; the physical build stalled where a student lab stops being enough.
-          It taught me that progress in quantum computing is gated less by
-          understanding and more by infrastructure.
-        </p>
-
-        <p className="mt-6">
-          Also: <a href="https://agent-aria.streamlit.app">ARIA</a>, a
-          LangGraph research agent with a structured four-dimension critic
-          and targeted replanning &mdash; it pulls from arXiv, Wikipedia,
-          GitHub, and the web, exports to PDF, keeps persistent sessions,
-          and ships with 69 tests passing in CI; ProofChain AI, on-chain
-          developer credential verification built in about 24 hours at RIFT
-          &rsquo;26;
-          rank 113 of 200+ in the AWS AI League at AWS Summit Bengaluru 2026.
-          Outside of code I&rsquo;m an NCC Air Wing cadet: 10+ camps, 2
-          nationals, Best Air Contingent Award at AIVSC 2024, and a microlight
-          sortie over Yelahanka on my 18th birthday.
+          ), ProofChain AI at RIFT &rsquo;26, rank 113/200+ in the AWS AI
+          League, and NCC Air Wing (2 nationals, Best Air Contingent Award).
         </p>
 
         <ul className="mt-8 list-none space-y-4 sm:space-y-2">
