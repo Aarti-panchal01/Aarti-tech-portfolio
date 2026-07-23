@@ -26,12 +26,14 @@ export default function About() {
           What I do
         </h2>
         <p className="mt-4">
-          I build production systems &mdash; voice AI that handles real phone
-          calls, government infrastructure that serves millions, and tools that
-          solve problems I ran into myself. Currently: Product Engineer at{" "}
-          <a href="https://inverix.in">Inverix</a>, C4GT &rsquo;26 Fellow at
-          Piramal Swasthya, and founder of{" "}
-          <a href="https://khojapp.in">Khoj</a>.
+          I build production systems: AI agents, government infrastructure that
+          serves millions, and tools that solve problems I ran into myself.
+        </p>
+        <p className="mt-3">
+          Currently: Product Engineer at{" "}
+          <a href="https://inverix.in">Inverix</a>, C4GT &rsquo;26 Fellow at{" "}
+          <a href="https://github.com/PSMRI">Piramal Swasthya</a>, and founder
+          of <a href="https://khojapp.in">Khoj</a>.
         </p>
 
         {/* What I've shipped */}
