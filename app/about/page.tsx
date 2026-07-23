@@ -26,7 +26,7 @@ export default function About() {
           What I do
         </h2>
         <p className="mt-4">
-          19. Student-founder. I see broken things and fix them, then ship
+          Student-founder. I see broken things and fix them &mdash; then ship
           them.
         </p>
         <p className="mt-4 text-soft">
