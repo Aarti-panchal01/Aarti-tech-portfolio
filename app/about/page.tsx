@@ -26,10 +26,10 @@ export default function About() {
           What I do
         </h2>
         <p className="mt-4">
-          I build production systems: AI agents, government infrastructure that
-          serves millions, and tools that solve problems I ran into myself.
+          19. Student-founder. I see broken things and fix them, then ship
+          them.
         </p>
-        <p className="mt-3">
+        <p className="mt-4 text-soft">
           Currently: Product Engineer at{" "}
           <a href="https://inverix.in">Inverix</a>, C4GT &rsquo;26 Fellow at{" "}
           <a href="https://github.com/PSMRI">Piramal Swasthya</a>, and founder
