@@ -26,12 +26,12 @@ export default function About() {
           What I do
         </h2>
         <p className="mt-4">
-          I&rsquo;m a product engineer at{" "}
-          <a href="https://inverix.in">Inverix</a>, where I built a production
-          multilingual voice AI endpoint that holds real phone calls, and a
-          C4GT &rsquo;26 fellow rebuilding India&rsquo;s 104 health helpline.
-          My job, over and over, is turning something chaotic into software
-          that ships &mdash; lately, voice agents that get tested automatically.
+          I build production systems &mdash; voice AI that handles real phone
+          calls, government infrastructure that serves millions, and tools that
+          solve problems I ran into myself. Currently: Product Engineer at{" "}
+          <a href="https://inverix.in">Inverix</a>, C4GT &rsquo;26 Fellow at
+          Piramal Swasthya, and founder of{" "}
+          <a href="https://khojapp.in">Khoj</a>.
         </p>
 
         {/* What I've shipped */}
@@ -39,96 +39,57 @@ export default function About() {
           What I&rsquo;ve shipped
         </h2>
         <ul className="mt-4 list-none space-y-4">
-          <li>
-            <span className="font-medium text-ink">
-              <a href="https://voxharness-web.vercel.app">voxharness</a>
-            </span>{" "}
-            &mdash; voice AI CI testing harness; calls your agent, plays the
-            customer, scores it. Zero humans.{" "}
-            <span className="label text-soft">
-              <a href="https://voxharness-web.vercel.app">Live &#8599;</a>
-              &ensp;
-              <a href="https://github.com/Aarti-panchal01/voxharness">
-                GitHub &#8599;
-              </a>
-            </span>
-          </li>
-          <li>
-            <span className="font-medium text-ink">
-              <a href="https://agent-aria.streamlit.app">ARIA</a>
-            </span>{" "}
-            &mdash; autonomous research agent that grades its own work and
-            replans.{" "}
-            <span className="label text-soft">
-              <a href="https://agent-aria.streamlit.app">Live &#8599;</a>
-              &ensp;
-              <a href="https://github.com/Aarti-panchal01/aria-agent">
-                GitHub &#8599;
-              </a>
-            </span>
-          </li>
-          <li>
-            <span className="font-medium text-ink">
-              <a href="https://khojapp.in">Khoj</a>
-            </span>{" "}
-            &mdash; campus lost-and-found, 500+ users across 20+ campuses.{" "}
-            <span className="label text-soft">
-              <a href="https://khojapp.in">Live &#8599;</a>
-              &ensp;
-              <a href="https://github.com/Aarti-panchal01">GitHub &#8599;</a>
-            </span>
-          </li>
-          <li>
-            <span className="font-medium text-ink">
-              <a href="https://github.com/PSMRI/Helpline104-UI-NEXT">
-                Helpline104
-              </a>
-            </span>{" "}
-            &mdash; India&rsquo;s national 104 helpline, Angular 4&rarr;20
-            migration (solo, 28 PRs).{" "}
-            <span className="label text-soft">
-              <a href="https://github.com/PSMRI/Helpline104-UI-NEXT">
-                GitHub &#8599;
-              </a>
-            </span>
-          </li>
-        </ul>
-
-        {/* Where I work */}
-        <h2 className="label mt-10 border-b border-hairline pb-2 text-soft">
-          Where I work
-        </h2>
-        <ul className="mt-4 list-none space-y-3 text-soft">
-          <li className="flex gap-3">
-            <span className="num" aria-hidden="true">
-              ▸
-            </span>
-            <span>
-              <span className="text-ink">Product Engineer at Inverix</span>{" "}
-              &mdash; multilingual voice AI (sub-1.4s, real calls), Aadhaar/OVS
-              integration
-            </span>
-          </li>
-          <li className="flex gap-3">
-            <span className="num" aria-hidden="true">
-              ▸
-            </span>
-            <span>
-              <span className="text-ink">
-                C4GT 2026 Fellow at Piramal Swasthya
-              </span>{" "}
-              &mdash; rebuilding India&rsquo;s 104 health helpline
-            </span>
-          </li>
-          <li className="flex gap-3">
-            <span className="num" aria-hidden="true">
-              ▸
-            </span>
-            <span>
-              <span className="text-ink">Founder of Khoj</span> &mdash; 500+
-              users, 20+ Bengaluru campuses
-            </span>
-          </li>
+          {[
+            {
+              name: "voxharness",
+              nameHref: "https://voxharness-web.vercel.app",
+              desc: "voice AI CI testing harness, zero humans",
+              live: "https://voxharness-web.vercel.app",
+              github: "https://github.com/Aarti-panchal01/voxharness",
+            },
+            {
+              name: "ARIA",
+              nameHref: "https://agent-aria.streamlit.app",
+              desc: "autonomous research agent with structured critic + replanning",
+              live: "https://agent-aria.streamlit.app",
+              github: "https://github.com/Aarti-panchal01/aria-agent",
+            },
+            {
+              name: "Khoj",
+              nameHref: "https://khojapp.in",
+              desc: "campus lost-and-found, 500+ users, 20+ Bengaluru campuses",
+              live: "https://khojapp.in",
+              github: "https://github.com/Aarti-panchal01",
+            },
+            {
+              name: "Helpline104",
+              nameHref: "https://github.com/PSMRI/Helpline104-UI-NEXT",
+              desc: "Angular 4→20 migration, India's 104 health helpline, 28 PRs",
+              live: null,
+              github: "https://github.com/PSMRI/Helpline104-UI-NEXT",
+            },
+          ].map((p) => (
+            <li
+              key={p.name}
+              className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4"
+            >
+              <span className="min-w-0">
+                <span className="font-medium text-ink">
+                  <a href={p.nameHref}>{p.name}</a>
+                </span>{" "}
+                &mdash; {p.desc}
+              </span>
+              <span className="label shrink-0 whitespace-nowrap text-soft">
+                {p.live && (
+                  <>
+                    <a href={p.live}>Live &#8599;</a>
+                    <span aria-hidden="true">&ensp;</span>
+                  </>
+                )}
+                <a href={p.github}>GitHub &#8599;</a>
+              </span>
+            </li>
+          ))}
         </ul>
 
         <p className="mt-8 text-soft">
