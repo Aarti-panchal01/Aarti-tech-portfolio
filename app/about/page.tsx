@@ -31,7 +31,8 @@ export default function About() {
         </p>
         <p className="mt-4 text-soft">
           Currently: Product Engineer at{" "}
-          <a href="https://inverix.in">Inverix</a>, C4GT &rsquo;26 Fellow at{" "}
+          <a href="https://www.linkedin.com/company/inverix/">Inverix</a>, C4GT
+          &rsquo;26 Fellow at{" "}
           <a href="https://github.com/PSMRI">Piramal Swasthya</a>, and founder
           of <a href="https://khojapp.in">Khoj</a>.
         </p>
