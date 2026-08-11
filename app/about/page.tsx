@@ -30,11 +30,20 @@ export default function About() {
           them.
         </p>
         <p className="mt-4 text-soft">
-          Currently: Product Engineer at{" "}
-          <a href="https://www.linkedin.com/company/inverix/">Inverix</a>, C4GT
-          &rsquo;26 Fellow at{" "}
-          <a href="https://github.com/PSMRI">Piramal Swasthya</a>, and founder
-          of <a href="https://khojapp.in">Khoj</a>.
+          Currently: C4GT DMP &rsquo;26 Contributor at{" "}
+          <a href="https://github.com/PSMRI">Piramal Swasthya</a>, rebuilding
+          the 104 health helpline frontend, and founder of{" "}
+          <a href="https://khojapp.in">Khoj</a>.
+        </p>
+        <p className="mt-4 text-soft">
+          Before that: Product Engineer at{" "}
+          <a href="https://www.linkedin.com/company/inverix/">Inverix</a> (Jun
+          &ndash; Jul 2026), the first engineer besides the two founders, where
+          I shipped three products &mdash;{" "}
+          <a href="/blog/shipping-real-products-as-first-engineering-hire/">
+            the write-up is here
+          </a>
+          .
         </p>
 
         {/* What I've shipped */}
@@ -44,11 +53,40 @@ export default function About() {
         <ul className="mt-4 list-none space-y-4">
           {[
             {
+              name: "Helpline104-UI-NEXT",
+              nameHref: "https://github.com/PSMRI/Helpline104-UI-NEXT",
+              desc: "Angular 4→20 rebuild of India's 104 health helpline, 38 PRs merged, solo",
+              live: null,
+              github: "https://github.com/PSMRI/Helpline104-UI-NEXT",
+              writeup: "/blog/rebuilding-104-health-helpline-angular-4-to-20/",
+            },
+            {
+              name: "AI voice exit interviews",
+              nameHref:
+                "/blog/shipping-real-products-as-first-engineering-hire/",
+              desc: "multilingual voice agent + a trust score computed from real data, not hardcoded",
+              live: null,
+              github: null,
+              writeup:
+                "/blog/shipping-real-products-as-first-engineering-hire/",
+            },
+            {
+              name: "Inverix Attend",
+              nameHref:
+                "/blog/shipping-real-products-as-first-engineering-hire/",
+              desc: "Aadhaar-verified enrollment, on-device face check-in, offline-first, 5 languages",
+              live: null,
+              github: null,
+              writeup:
+                "/blog/shipping-real-products-as-first-engineering-hire/",
+            },
+            {
               name: "voxharness",
               nameHref: "https://voxharness-web.vercel.app",
               desc: "voice AI CI testing harness, zero humans",
               live: "https://voxharness-web.vercel.app",
               github: "https://github.com/Aarti-panchal01/voxharness",
+              writeup: null,
             },
             {
               name: "ARIA",
@@ -56,20 +94,15 @@ export default function About() {
               desc: "autonomous research agent with structured critic + replanning",
               live: "https://agent-aria.streamlit.app",
               github: "https://github.com/Aarti-panchal01/aria-agent",
+              writeup: null,
             },
             {
               name: "Khoj",
               nameHref: "https://khojapp.in",
-              desc: "campus lost-and-found, 500+ users, 20+ Bengaluru campuses",
+              desc: "campus lost-and-found, launched Jan 2026, presented at NITK Incub8",
               live: "https://khojapp.in",
               github: "https://github.com/Aarti-panchal01",
-            },
-            {
-              name: "Helpline104",
-              nameHref: "https://github.com/PSMRI/Helpline104-UI-NEXT",
-              desc: "Angular 4→20 migration, India's 104 health helpline, 28 PRs",
-              live: null,
-              github: "https://github.com/PSMRI/Helpline104-UI-NEXT",
+              writeup: null,
             },
           ].map((p) => (
             <li
@@ -89,7 +122,13 @@ export default function About() {
                     <span aria-hidden="true">&ensp;</span>
                   </>
                 )}
-                <a href={p.github}>GitHub &#8599;</a>
+                {p.github && (
+                  <>
+                    <a href={p.github}>GitHub &#8599;</a>
+                    {p.writeup && <span aria-hidden="true">&ensp;</span>}
+                  </>
+                )}
+                {p.writeup && <a href={p.writeup}>Write-up &#8599;</a>}
               </span>
             </li>
           ))}
@@ -126,7 +165,7 @@ export default function About() {
               <span className="num" aria-hidden="true">
                 &rarr;&ensp;
               </span>
-              <a href="https://linkedin.com/in/aarti-panchal-93196a319">
+              <a href="https://linkedin.com/in/aartipanchal01">
                 LinkedIn, where I pretend to be serious
               </a>
             </span>
@@ -144,13 +183,15 @@ export default function About() {
           </li>
           <li className="flex flex-col sm:flex-row sm:gap-x-3">
             <span className="label shrink-0 text-soft sm:w-36 sm:pt-1">
-              the creative side
+              more writing
             </span>
             <span>
               <span className="num" aria-hidden="true">
                 &rarr;&ensp;
               </span>
-              <a href="https://aarti-panchal.site">aarti-panchal.site</a>
+              <a href="https://dev.to/aarti-panchal01">
+                dev.to, where the posts land first
+              </a>
             </span>
           </li>
           <li className="flex flex-col sm:flex-row sm:gap-x-3">

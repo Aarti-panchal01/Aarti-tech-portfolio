@@ -50,7 +50,10 @@ export default async function Post({ params }: { params: Promise<Params> }) {
 
         <p className="mt-6 text-soft">
           First published on{" "}
-          <a href={post.sourceUrl}>Hashnode</a>.
+          <a href={post.sourceUrl}>
+            {post.sourceUrl.includes("dev.to") ? "dev.to" : "Hashnode"}
+          </a>
+          .
         </p>
       </main>
 

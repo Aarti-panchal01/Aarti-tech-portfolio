@@ -7,7 +7,7 @@ import posts from "./posts.json";
 export const metadata: Metadata = {
   title: "Blog | Aarti Panchal",
   description:
-    "Writing on NMR quantum computing, research agents, and building for India — by Aarti Panchal, C4GT 2026 fellow and founder of Khoj.",
+    "Writing on production voice AI, migrating India's 104 health helpline to Angular 20, getting into C4GT DMP, and NMR quantum computing — by Aarti Panchal.",
 };
 
 export default function Blog() {
@@ -19,8 +19,9 @@ export default function Blog() {
         <h1 className="text-3xl font-medium tracking-tight">Blog</h1>
 
         <p className="mt-4 text-soft">
-          Selected writing — quantum hardware from a student lab, and the
-          engineering behind things I&rsquo;ve built.
+          Selected writing — the engineering behind things I&rsquo;ve shipped,
+          what a government-tech fellowship is actually like, and quantum
+          hardware from a student lab.
         </p>
 
         <hr className="mt-5 border-hairline" />

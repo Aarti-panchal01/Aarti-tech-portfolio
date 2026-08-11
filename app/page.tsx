@@ -18,11 +18,11 @@ export default function Home() {
         <hr className="mt-3 border-hairline" />
 
         <p className="label mt-3 text-soft">
-          Product Engineer @ Inverix
+          C4GT DMP &rsquo;26 Contributor @ Piramal Swasthya
           <span aria-hidden="true">&ensp;|&ensp;</span>
           Founder @ Khoj
           <span aria-hidden="true">&ensp;|&ensp;</span>
-          C4GT &rsquo;26 Fellow @ Piramal Swasthya
+          Product Engineer, Inverix &rsquo;26
           <span aria-hidden="true">&ensp;|&ensp;</span>
           PESU AIML &rsquo;28
         </p>
@@ -52,9 +52,14 @@ export default function Home() {
               ▸
             </span>
             <span>
-              <span className="num">500+</span> students on{" "}
-              <a href="https://khojapp.in">Khoj</a> across{" "}
-              <span className="num">20+</span> Bengaluru campuses
+              <span className="num">38</span> PRs merged into India&rsquo;s
+              national{" "}
+              <a href="https://github.com/PSMRI/Helpline104-UI-NEXT">
+                104 health helpline
+              </a>{" "}
+              (Angular 4&rarr;20, solo) &mdash;{" "}
+              <span className="num">46</span> across the AMRIT platform,
+              midterm cleared
             </span>
           </li>
           <li className="flex gap-3">
@@ -63,7 +68,11 @@ export default function Home() {
             </span>
             <span>
               <span className="num">sub-1.4s</span> multilingual voice AI on
-              real phone calls &mdash; Hindi, Kannada, Telugu, Tamil
+              real phone calls &mdash; Hindi, Kannada, Telugu, Tamil (
+              <a href="/blog/shipping-real-products-as-first-engineering-hire/">
+                written up
+              </a>
+              )
             </span>
           </li>
           <li className="flex gap-3">
@@ -71,12 +80,19 @@ export default function Home() {
               ▸
             </span>
             <span>
-              <span className="num">28</span> PRs merged to India&rsquo;s
-              national{" "}
-              <a href="https://github.com/PSMRI/Helpline104-UI-NEXT">
-                104 health helpline
-              </a>{" "}
-              (Angular 4&rarr;20, solo)
+              Inverix Attend: Aadhaar-verified enrollment, on-device face
+              check-in, offline-first,{" "}
+              <span className="num">5</span> languages
+            </span>
+          </li>
+          <li className="flex gap-3">
+            <span className="num" aria-hidden="true">
+              ▸
+            </span>
+            <span>
+              <a href="https://khojapp.in">Khoj</a>: campus lost-and-found,
+              launched Jan <span className="num">2026</span>, presented at NITK
+              Incub8
             </span>
           </li>
           <li className="flex gap-3">

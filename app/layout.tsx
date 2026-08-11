@@ -19,7 +19,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Aarti Panchal",
   description:
-    "Engineer at PES University, Bengaluru. C4GT 2026 fellow rebuilding India’s 104 health helpline UI. Founder of Khoj. Writes about NMR quantum computing and research agents.",
+    "Engineer at PES University, Bengaluru. C4GT DMP ’26 contributor rebuilding India’s 104 health helpline frontend from Angular 4 to 20. Founder of Khoj. Writes about production voice AI, government tech, and quantum hardware.",
 };
 
 const themeInit = `try{if(localStorage.getItem("theme")==="light")document.documentElement.dataset.theme="light"}catch(e){}`;
