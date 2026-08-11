@@ -61,15 +61,6 @@ export default function About() {
               writeup: "/blog/rebuilding-104-health-helpline-angular-4-to-20/",
             },
             {
-              name: "AI voice exit interviews",
-              nameHref: null,
-              desc: "multilingual voice agent + a trust score computed from real data, not hardcoded",
-              live: null,
-              github: null,
-              writeup:
-                "/blog/shipping-real-products-as-first-engineering-hire/",
-            },
-            {
               name: "Inverix Attend",
               nameHref: null,
               desc: "Aadhaar-verified enrollment, on-device face check-in, offline-first, 5 languages",
