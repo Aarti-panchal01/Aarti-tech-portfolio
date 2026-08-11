@@ -55,7 +55,7 @@ export default function About() {
             {
               name: "Helpline104-UI-NEXT",
               nameHref: "https://github.com/PSMRI/Helpline104-UI-NEXT",
-              desc: "Angular 4→20 rebuild of India's 104 health helpline, 38 PRs merged, solo",
+              desc: "Angular 4→20 rebuild of India's 104 health helpline — 38 PRs merged solo, 46 across the AMRIT platform, midterm cleared",
               live: null,
               github: "https://github.com/PSMRI/Helpline104-UI-NEXT",
               writeup: "/blog/rebuilding-104-health-helpline-angular-4-to-20/",

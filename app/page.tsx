@@ -32,21 +32,16 @@ export default function Home() {
           lost charger drowning in campus WhatsApp groups became{" "}
           <a href="https://khojapp.in">Khoj</a>. Picking up my own test calls
           at Inverix became{" "}
-          <a href="https://voxharness-web.vercel.app">voxharness</a>, a CI
-          harness that tests voice agents over real phone calls. The 2017-era
-          code behind India&rsquo;s{" "}
+          <a href="https://voxharness-web.vercel.app">voxharness</a>. The
+          2017-era code behind India&rsquo;s{" "}
           <a href="https://github.com/PSMRI/Helpline104-UI-NEXT">
             104 health helpline
           </a>{" "}
-          is becoming a clean Angular 20 app, one component at a time. A
-          research question I couldn&rsquo;t stop pulling on became{" "}
-          <a href="https://agent-aria.streamlit.app">ARIA</a>, an agent that
-          grades its own work and replans. Molecules in a vial almost became a
-          computer. The AIML degree at PES is the excuse; shipping is the
-          actual education.
+          is becoming a clean Angular 20 app, one component at a time. The
+          AIML degree at PES is the excuse; shipping is the actual education.
         </p>
 
-        <ul className="mt-4 list-none space-y-1 text-soft">
+        <ul className="mt-5 list-none space-y-1.5 text-soft">
           <li className="flex gap-3">
             <span className="num" aria-hidden="true">
               ▸
@@ -57,9 +52,7 @@ export default function Home() {
               <a href="https://github.com/PSMRI/Helpline104-UI-NEXT">
                 104 health helpline
               </a>{" "}
-              (Angular 4&rarr;20, solo) &mdash;{" "}
-              <span className="num">46</span> across the AMRIT platform,
-              midterm cleared
+              &mdash; Angular 4&rarr;20, solo
             </span>
           </li>
           <li className="flex gap-3">
@@ -68,7 +61,7 @@ export default function Home() {
             </span>
             <span>
               <span className="num">sub-1.4s</span> multilingual voice AI on
-              real phone calls &mdash; Hindi, Kannada, Telugu, Tamil (
+              real phone calls (
               <a href="/blog/shipping-real-products-as-first-engineering-hire/">
                 written up
               </a>
@@ -80,29 +73,9 @@ export default function Home() {
               ▸
             </span>
             <span>
-              Inverix Attend: Aadhaar-verified enrollment, on-device face
-              check-in, offline-first,{" "}
-              <span className="num">5</span> languages
-            </span>
-          </li>
-          <li className="flex gap-3">
-            <span className="num" aria-hidden="true">
-              ▸
-            </span>
-            <span>
-              <a href="https://khojapp.in">Khoj</a>: campus lost-and-found,
-              launched Jan <span className="num">2026</span>, presented at NITK
-              Incub8
-            </span>
-          </li>
-          <li className="flex gap-3">
-            <span className="num" aria-hidden="true">
-              ▸
-            </span>
-            <span>
               <a href="https://voxharness-web.vercel.app">voxharness</a>:
               open-source CI harness for voice agents,{" "}
-              <span className="num">69</span> tests passing
+              <span className="num">69</span> tests green
             </span>
           </li>
           <li className="flex gap-3">
@@ -110,30 +83,16 @@ export default function Home() {
               ▸
             </span>
             <span>
-              <a href="https://agent-aria.streamlit.app">ARIA</a>: autonomous
-              research agent, live at agent-aria.streamlit.app
-            </span>
-          </li>
-          <li className="flex gap-3">
-            <span className="num" aria-hidden="true">
-              ▸
-            </span>
-            <span>
-              <span className="num">2</span> qubits of NMR quantum computing at
-              Quanad Lab
-            </span>
-          </li>
-          <li className="flex gap-3">
-            <span className="num" aria-hidden="true">
-              ▸
-            </span>
-            <span>
-              <span className="num">20+</span> shipped projects
+              Founded <a href="https://khojapp.in">Khoj</a>, launched Jan{" "}
+              <span className="num">2026</span>
             </span>
           </li>
         </ul>
 
-        <p className="mt-4">I build what I want to see.</p>
+        <p className="mt-5">
+          I build what I want to see. The longer version is on{" "}
+          <a href="/about/">about</a>.
+        </p>
       </main>
 
       <SiteFooter />
