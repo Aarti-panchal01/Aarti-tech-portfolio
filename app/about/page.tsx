@@ -62,8 +62,7 @@ export default function About() {
             },
             {
               name: "AI voice exit interviews",
-              nameHref:
-                "/blog/shipping-real-products-as-first-engineering-hire/",
+              nameHref: null,
               desc: "multilingual voice agent + a trust score computed from real data, not hardcoded",
               live: null,
               github: null,
@@ -72,8 +71,7 @@ export default function About() {
             },
             {
               name: "Inverix Attend",
-              nameHref:
-                "/blog/shipping-real-products-as-first-engineering-hire/",
+              nameHref: null,
               desc: "Aadhaar-verified enrollment, on-device face check-in, offline-first, 5 languages",
               live: null,
               github: null,
@@ -111,7 +109,7 @@ export default function About() {
             >
               <span className="min-w-0">
                 <span className="font-medium text-ink">
-                  <a href={p.nameHref}>{p.name}</a>
+                  {p.nameHref ? <a href={p.nameHref}>{p.name}</a> : p.name}
                 </span>{" "}
                 &mdash; {p.desc}
               </span>

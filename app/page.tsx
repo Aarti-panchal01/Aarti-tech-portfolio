@@ -22,7 +22,7 @@ export default function Home() {
           <span aria-hidden="true">&ensp;|&ensp;</span>
           Founder @ Khoj
           <span aria-hidden="true">&ensp;|&ensp;</span>
-          Product Engineer, Inverix &rsquo;26
+          Product Engineer, Inverix (Jun&ndash;Jul &rsquo;26)
           <span aria-hidden="true">&ensp;|&ensp;</span>
           PESU AIML &rsquo;28
         </p>
