@@ -18,9 +18,26 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
   if (!post) return {};
+  const url = `/blog/${post.slug}/`;
   return {
-    title: `${post.title} | Aarti Panchal`,
+    title: post.title,
     description: post.description,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "article",
+      title: post.title,
+      description: post.description,
+      url,
+      publishedTime: post.date,
+      authors: ["Aarti Panchal"],
+      images: ["/og.png"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description,
+      images: ["/og.png"],
+    },
   };
 }
 

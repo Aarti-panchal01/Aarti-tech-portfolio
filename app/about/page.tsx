@@ -2,8 +2,26 @@ import type { Metadata } from "next";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 
+const ABOUT_DESC =
+  "What I've shipped: the Angular 4→20 rebuild of India's 104 health helpline, production multilingual voice AI at Inverix, voxharness, ARIA, and Khoj.";
+
 export const metadata: Metadata = {
-  title: "About me | Aarti Panchal",
+  title: "About me",
+  description: ABOUT_DESC,
+  alternates: { canonical: "/about/" },
+  openGraph: {
+    type: "profile",
+    title: "About Aarti Panchal",
+    description: ABOUT_DESC,
+    url: "/about/",
+    images: ["/og.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Aarti Panchal",
+    description: ABOUT_DESC,
+    images: ["/og.png"],
+  },
 };
 
 export default function About() {

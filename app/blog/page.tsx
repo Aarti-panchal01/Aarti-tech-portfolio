@@ -4,10 +4,26 @@ import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
 import posts from "./posts.json";
 
+const BLOG_DESC =
+  "Writing on production voice AI, migrating India's 104 health helpline to Angular 20, getting into C4GT DMP, and NMR quantum computing — by Aarti Panchal.";
+
 export const metadata: Metadata = {
-  title: "Blog | Aarti Panchal",
-  description:
-    "Writing on production voice AI, migrating India's 104 health helpline to Angular 20, getting into C4GT DMP, and NMR quantum computing — by Aarti Panchal.",
+  title: "Blog",
+  description: BLOG_DESC,
+  alternates: { canonical: "/blog/" },
+  openGraph: {
+    type: "website",
+    title: "Blog — Aarti Panchal",
+    description: BLOG_DESC,
+    url: "/blog/",
+    images: ["/og.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog — Aarti Panchal",
+    description: BLOG_DESC,
+    images: ["/og.png"],
+  },
 };
 
 export default function Blog() {
