@@ -47,12 +47,12 @@ export default function Home() {
               ▸
             </span>
             <span>
-              <span className="num">38</span> PRs merged into India&rsquo;s
+              <span className="num">40+</span> PRs merged into India&rsquo;s
               national{" "}
               <a href="https://github.com/PSMRI/Helpline104-UI-NEXT">
                 104 health helpline
               </a>{" "}
-              &mdash; Angular 4&rarr;20, solo
+              and the wider AMRIT platform &mdash; Angular 4&rarr;20, solo
             </span>
           </li>
           <li className="flex gap-3">
